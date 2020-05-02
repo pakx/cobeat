@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <style>
 body {font-family: 'Montserrat', sans-serif;}
-header {display:block;font-family: 'Gloria Hallelujah',cursive;font-size:xx-large;}
-header:after {display:block;font-family:monospace;font-size:small;margin-top:-1em;}
-appinfo {color:grey;display:block;font-size:small;}
-appmeta {color:grey;display:block;font-size:small;}
+header {display:block;font-family: 'Gloria Hallelujah',cursive;font-size:25pt;}
+headerStats {display:block;font-family:monospace;font-size:small;margin-top:-1em;}
+appmeta{color:grey;display:block;font-size:small;}
+appnote{color:grey;display:block;font-size:small;}
 bigcheckbox{border-radius:5px;cursor:pointer;display:inline-block;height:15px;margin-top:0.5em;padding:5px;width:15px;}
 .bigcheckboxOn{background-color:green;}
 .bigcheckboxOff{background-color:gray;}
@@ -37,10 +37,12 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
                                   supported by Chrome, Opera and Firefox */
 }
 @media only screen and (max-device-width: 760px)  {
+    appnote{font-size:2em;}
+    appmeta{font-size:0.75em;}
     dashboard input {font-size:5em;width:75%;}
-    dashboard label {font-size:5em;}
+    dashboard label {font-size:3em;}
+    header{font-size:75pt;}
     .rc {color:#ccc;font-size:5em;}
-    metadata {font-size:1.5em;}
     table, thead, tbody, th, td, tr {display: block;}
     thead tr {position: absolute;top: -9999px;left: -9999px;}
     tr {border: 1px solid #ccc; }
@@ -50,12 +52,6 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
     </style>
 </head>
 <body>
-    <header>CoBeat Sets</header>
-    <metadata>Salsa sets from <a href="https://www.facebook.com/groups/cobeatparty/">fb #cobeatparty</a></metadata>
-    <metadata>comments/suggestions pls write <a href="">here</a></metadata>
-    <br/><br/>
-    <div id="app"></div>
-    <style>header:after{content:"648 sets, 202 djs, 543 hours of salsa"}</style>
-    <script async src="app.js?x=0.1.0-mrgJ_x0Oz"></script>
+    <script async src="app.js?x=0.1.0-RczRZil09"></script>
 </body>
 </html>
