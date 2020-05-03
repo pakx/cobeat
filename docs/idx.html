@@ -10,9 +10,8 @@
     <style>
 body {font-family: 'Montserrat', sans-serif;}
 header {display:block;font-family: 'Gloria Hallelujah',cursive;font-size:25pt;}
-headerStats {display:block;font-family:monospace;font-size:small;margin-top:-1em;}
-appmeta{color:grey;display:block;font-size:small;}
-appnote{color:grey;display:block;font-size:small;}
+headerStats {display:block;font-family:monospace;font-size:small;margin:-1em 0 1em;}
+appmeta,appnote{color:grey;display:block;font-size:small;}
 dashboard{display:flex;margin:1em 0em;}
 filter{display:flex;}
 filter input{border:1px solid #666;border-radius:5px;flex-grow:2;padding:5px;font-size:inherit;}
@@ -38,13 +37,14 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
                                   supported by Chrome, Opera and Firefox */
 }
 @media only screen and (max-device-width: 760px)  {
-    appnote{font-size:1.75em;}
-    appmeta{font-size:0.55em;}
+    appmeta{font-size:12pt;}
+    appnote{font-size:24pt;}
     dashboard{flex-direction:column;}
     filter{flex-direction:column;}
     filter input {font-size:3em;width:75%;}
     filter label{font-size:2.5em;}
     header{font-size:75pt;}
+    headerStats {font-size:16pt;margin-bottom:2em;}
     pager>pg{font-size:2.5em;}
     pager>select{font-size:2em;margin-right:1em;padding-left:1em;}
     pager>select option{font-size:0.5em;}
