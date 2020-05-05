@@ -14,12 +14,13 @@ body {font-family: 'Montserrat', sans-serif;}
 header {display:block;font-family: 'Gloria Hallelujah',cursive;font-size:25pt;}
 headerStats {display:block;font-family:monospace;font-size:small;margin:-1em 0 1em;}
 appmeta,appnote{color:grey;display:block;font-size:small;}
-dashboard{display:flex;margin:1em 0em;}
-filter{display:flex;position:relative;}
-filter input{border:1px solid #666;border-radius:5px;flex-grow:2;padding-left:0.5em;font-size:inherit;}
+button.refresh{background-color:forestgreen;border-radius:5px;color:white;font-size:1.5em;}
+dashboard{display:flex;flex-wrap:wrap;margin:1em 0em;}
+filter{display:flex;flex-wrap:wrap;margin-right:0.5em;position:relative;}
+filter input{border:1px solid #666;border-radius:5px;flex-grow:2;height:2em;padding-left:0.5em;font-size:inherit;}
 filter label{margin:0.5em 1em 0 0;}
 .ds {color:grey;font-family:monospace;font-size:small;white-space:nowrap;}
-pager{display:flex;flex-wrap:wrap;flex-grow:2;justify-content:center;}
+pager{display:flex;flex-wrap:wrap;flex-grow:2;justify-content:flex-start;}
 pager>pg{cursor:pointer;margin:0.5em 1em;padding:0.1em 0.5em;}
 pager>select{border-radius:5px;}
 .pgCur{background-color:#ccc;border-radius:5px;}
@@ -39,6 +40,12 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
+.btn_refresh {align-items:center;display:flex;height:35px;justify-content:center;width:150px;}
+p.saving{margin-top:-0.5em;}
+p.saving span {animation-name: blink;animation-duration: 1.4s;animation-iteration-count: infinite;animation-fill-mode: both;font-size: 30px;}
+p.saving span:nth-child(2) {animation-delay: .2s;}
+p.saving span:nth-child(3) {animation-delay: .4s;}
+@keyframes blink {0% {opacity: .2;}20% {opacity: 1;}100% {opacity: .2;}}
 @media only screen and (max-device-width: 760px)  {
     appmeta{font-size:12pt;}
     appnote{font-size:medium;}
@@ -48,6 +55,7 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
     filter label{font-size:1.5em;}
     header{font-size:3em;}
     headerStats {font-size:16pt;margin-bottom:2em;}
+    pager{justify-content:space-around;}
     pager>pg{font-size:2em;margin:0.25em;}
     pager>select{font-size:2em;margin-right:1em;padding-left:1em;}
     pager>select option{font-size:0.5em;}
@@ -61,6 +69,6 @@ tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
     </style>
 </head>
 <body>
-    <script async src="app.js?x=0.2.0-q9eWijHIW"></script>
+    <script async src="app.js?x=0.3.0-OqRAhJxBo"></script>
 </body>
 </html>
