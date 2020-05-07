@@ -12,10 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <style>
 appmsg{display:none;}
+appmeta,appnote{color:grey;display:block;font-size:small;}
 body {font-family: 'Montserrat', sans-serif;}
 header {display:block;font-family: 'Gloria Hallelujah',cursive;font-size:25pt;}
+mapblock{margin-left:2em;position:relative;}
+.mapworld{height:200px;position:absolute;z-index:-1;}
+notesblock{display:flex;}
 headerStats {display:block;font-family:monospace;font-size:small;margin:-1em 0 1em;}
-appmeta,appnote{color:grey;display:block;font-size:small;}
 dashboard{display:flex;flex-wrap:wrap;margin:1em 0em;}
 searchPanel{display:flex;flex-wrap:wrap;margin-right:0.5em;position:relative;}
 searchPanel input{border:1px solid #666;border-radius:5px;flex-grow:2;height:2em;padding-left:0.5em;font-size:inherit;}
@@ -53,11 +56,14 @@ p.saving span:nth-child(3) {animation-delay: .4s;}
     appmsg>p:nth-child(1){color:red;}
     appnote{font-size:medium;}
     dashboard{flex-direction:column;}
+    notesblock{flex-wrap:wrap;}
     searchPanel{flex-direction:column;}
     searchPanel input {font-size:2em;height:2em;width:75%;}
     searchPanel label{font-size:1.5em;}
     header{font-size:3em;}
     headerStats {font-size:16pt;margin-bottom:1em;}
+    mapblock{margin:1em auto 0;position:relative;}
+    .mapworld{height:auto;position:relative;width:95%;}
     pager{justify-content:space-around;}
     pager>pg{font-size:2em;}
     pager>select{font-size:2em;margin-right:1em;padding-left:1em;}
@@ -72,6 +78,6 @@ p.saving span:nth-child(3) {animation-delay: .4s;}
     </style>
 </head>
 <body>
-    <script async src="app.js?x=0.5.6-SMKD7KYDA"></script>
+    <script async src="app.js?x=0.5.7-tePxCAY6_"></script>
 </body>
 </html>
