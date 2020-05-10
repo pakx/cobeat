@@ -35,7 +35,8 @@ table {border-collapse:collapse;width:100%;}
 tr:nth-of-type(odd) {background:#eee;}
 td, th {padding: 2px 3px;border: 1px solid #ccc;text-align: left;}
 th {background:lightsteelblue;box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.4);font-weight:normal;padding:5px 3px;}
-tbody td:nth-of-type(2) { font-size: 0.8em; color:#666;}
+tbody td:nth-of-type(1){width:3em;}
+tbody td:nth-of-type(2){font-size: 0.8em; color:#666;width:12em;}
 .btn_refresh {align-items:center;display:flex;height:35px;justify-content:center;width:150px;}
 .ds {color:grey;font-family:monospace;font-size:small;white-space:nowrap;}
 .noselect {
@@ -52,6 +53,7 @@ p.saving{margin-top:-0.5em;}
 p.saving span {animation-name: blink;animation-duration: 1.4s;animation-iteration-count: infinite;animation-fill-mode: both;font-size: 30px;}
 p.saving span:nth-child(2) {animation-delay: .2s;}
 p.saving span:nth-child(3) {animation-delay: .4s;}
+.tz{font-variant:small-caps;}
 @keyframes blink {0% {opacity: .2;}20% {opacity: 1;}100% {opacity: .2;}}
 @media only screen and (max-device-width: 760px)  {
     appmeta{font-size:12pt;}
@@ -68,19 +70,19 @@ p.saving span:nth-child(3) {animation-delay: .4s;}
     mapblock{margin:1em auto 0;position:relative;}
     .mapworld{height:auto;position:relative;width:95%;}
     pager{justify-content:space-around;}
-    pager>pg{font-size:2em;}
-    pager>select{font-size:2em;margin-right:1em;padding-left:1em;}
+    pager>pg{font-size:1.5em;}
+    pager>select{font-size:1.5em;margin-right:1em;padding-left:1em;}
     pager>select option{font-size:0.5em;}
     rc {font-size:2em;position:absolute;top:0;right:0;}
     table, thead, tbody, th, td, tr {display: block;}
-    thead tr {position: absolute;top: -9999px;left: -9999px;}
+    thead{display:none;}
     tr {border: 1px solid #ccc; }
-    td {border: none;border-bottom:1px solid #eee;position:relative;padding-left:50px;}
-    td:before {position:absolute;top: 2px;left:3px;width:45%;padding-right:3px;white-space:nowrap;}
+    td {border: none;border-bottom:1px solid #eee;position:relative;padding-left:1em;}
+    tr>td:nth-child(2){position:absolute;left:65px;margin-top:-1.8em;}
 }
     </style>
 </head>
 <body>
-    <script async src="app.js?x=0.5.8-QLpIg-Dwv"></script>
+    <script async src="app.js?x=0.5.9-vBBIhr2u_"></script>
 </body>
 </html>
